@@ -1,0 +1,101 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+:root {
+    --fonte-padrao:'Passion One', cursive;
+    --fonte-destaque:'Sriracha', cursive;
+    --fonte-link: verdana, sans-serif;
+}
+
+*{
+    margin:0px;
+    padding:0px;
+}
+html, body {
+    min-height:100vh;
+}
+
+/*cabeçalho*/
+header{
+    background-color:black;
+    color:white;
+    text-align:center;
+    padding:50px 20px 50px 20px;
+}
+header > h1{
+    font-family:var(--fonte-padrao);
+    font-size: 10vw;
+    padding-bottom:10px;
+    font-variant:small-caps;
+}
+header > p {
+    font-family:var(--fonte-link);
+    font-size:16px;
+    font-weight:lighter;
+    padding-bottom:50px;
+} 
+header a , footer a  {
+    text-decoration: none;
+    color:white;
+    font-weight:bold;
+    
+}
+
+header a:hover, footer a:hover {
+    text-decoration: underline;
+}
+/*configuração do main*/
+main {
+    font-family:var(--fonte-destaque);
+    color:black;
+    font-size: 3vw;
+}
+section  {
+    padding-top:10vh;
+    padding-bottom:10vh;
+    line-height:2em;
+}
+section p{
+    padding:5px;
+}
+/*configuração paragrafo branco*/
+.branco{
+    max-width:600px;
+    margin:50px 0px 50px 50px;
+}
+/*configuração paragragrafo foto1 */
+section#p01 {
+    background: white url('../imagens/wallpaper.jpg') right bottom no-repeat fixed;
+    height:800px;
+    position:relative;
+    background-size:cover;
+    box-shadow:inset 6px 6px 13px 0px rgba(0, 0, 0, 0.459);
+
+}
+.pic {
+    max-width:600px;
+    margin:50px 50px 50px 50px;
+    color:white;
+    background-color:rgba(0, 0, 0, 0.651);
+    border-radius:20px;
+    position:absolute;
+    top: 10%;
+    text-shadow:1px 1px 0px black;
+}
+section#p02 {
+    background: white url('../imagens/background002.jpg') right bottom no-repeat fixed;
+    height:800px;
+    position:relative;
+    background-size:cover;
+    box-shadow:inset 6px 6px 13px 0px rgba(0, 0, 0, 0.459);
+}
+
+footer {
+    background-color:black;
+    padding:10px;
+}
+footer p{
+    font-family:var(--fonte-link);
+    text-align: center;
+    color:white;
+}
