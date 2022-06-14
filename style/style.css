@@ -62,6 +62,10 @@ section p{
 .branco{
     max-width:600px;
     margin:50px 0px 50px 50px;
+    
+}
+.branco p{
+    padding-bottom:50px;
 }
 /*configuração paragragrafo foto1 */
 section#p01 {
